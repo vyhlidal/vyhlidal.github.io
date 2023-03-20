@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Online Business Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Online Business Calculator</h1>
+    <div class="input-section">
+      <label for="leadsGenerated">Leads Generated</label>
+      <input type="number" id="leadsGenerated" placeholder="Leads Generated">
+
+      <label for="conversionRate">Conversion Rate (%)</label>
+      <input type="number" id="conversionRate" placeholder="Conversion Rate">
+
+      <label for="retainedCustomers">Retained Customers</label>
+      <input type="number" id="retainedCustomers" placeholder="Retained Customers">
+
+      <label for="revenuePerCustomer">Revenue Per Customer</label>
+      <input type="number" id="revenuePerCustomer" placeholder="Revenue Per Customer">
+
+      <label for="grossMargin">Gross Margin (%)</label>
+      <input type="number" id="grossMargin" placeholder="Gross Margin">
+
+      <label for="fixedCosts">Fixed Costs</label>
+      <input type="number" id="fixedCosts" placeholder="Fixed Costs">
+
+      <label for="improvementLeads">Improvement Percentage for Leads Generated (%)</label>
+      <input type="number" id="improvementLeads" placeholder="Improvement Percentage">
+
+      <label for="improvementConversion">Improvement Percentage for Conversion Rate (%)</label>
+      <input type="number" id="improvementConversion" placeholder="Improvement Percentage">
+
+      <label for="improvementRetention">Improvement Percentage for Retained Customers (%)</label>
+      <input type="number" id="improvementRetention" placeholder="Improvement Percentage">
+
+      <label for="improvementRevenue">Improvement Percentage for Revenue Per Customer (%)</label>
+      <input type="number" id="improvementRevenue" placeholder="Improvement Percentage">
+
+      <label for="improvementMargin">Improvement Percentage for Gross Margin (%)</label>
+      <input type="number" id="improvementMargin" placeholder="Improvement Percentage">
+
+      <label for="improvementCosts">Improvement Percentage for Fixed Costs (%)</label>
+      <input type="number" id="improvementCosts" placeholder="Improvement Percentage">
+
+      <button id="calculateButton">Calculate</button>
+    </div>
+    <div class="result-section">
+      <!-- Display results here -->
+    </div>
+    <div class="chart-container">
+      <canvas id="impactChart"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
