@@ -10,109 +10,83 @@
   <div class="container">
     <h1>Online Business Calculator</h1>
     <div class="input-section">
-      <label for="leadsGenerated">Leads Generated</label>
-      <input type="number" id="leadsGenerated" placeholder="Leads Generated">
-
-      <label for="conversionRate">Conversion Rate (%)</label>
-      <input type="number" id="conversionRate" placeholder="Conversion Rate">
-
-      <label for="retainedCustomers">Retained Customers</label>
-      <input type="number" id="retainedCustomers" placeholder="Retained Customers">
-
-      <label for="revenuePerCustomer">Revenue Per Customer</label>
-      <input type="number" id="revenuePerCustomer" placeholder="Revenue Per Customer">
-
-      <label for="grossMargin">Gross Margin (%)</label>
-      <input type="number" id="grossMargin" placeholder="Gross Margin">
-
-      <label for="fixedCosts">Fixed Costs</label>
-      <input type="number" id="fixedCosts" placeholder="Fixed Costs">
-
-      <label for="improvementLeads">Improvement Percentage for Leads Generated (%)</label>
-      <input type="number" id="improvementLeads" placeholder="Improvement Percentage">
-
-      <label for="improvementConversion">Improvement Percentage for Conversion Rate (%)</label>
-      <input type="number" id="improvementConversion" placeholder="Improvement Percentage">
-
-      <label for="improvementRetention">Improvement Percentage for Retained Customers (%)</label>
-      <input type="number" id="improvementRetention" placeholder="Improvement Percentage">
-
-      <label for="improvementRevenue">Improvement Percentage for Revenue Per Customer (%)</label>
-      <input type="number" id="improvementRevenue" placeholder="Improvement Percentage">
-
-      <label for="improvementMargin">Improvement Percentage for Gross Margin (%)</label>
-      <input type="number" id="improvementMargin" placeholder="Improvement Percentage">
-
-      <label for="improvementCosts">Improvement Percentage for Fixed Costs (%)</label>
-      <input type="number" id="improvementCosts" placeholder="Improvement Percentage">
-
-      <button id="calculateButton">Calculate</button>
-    </div>
-    <div class="result-section">
-      <h2>Results</h2>
       <table>
         <tr>
           <th>Metrics</th>
           <th>Current</th>
+          <th>Improvement Percentage</th>
           <th>Improved</th>
         </tr>
         <tr>
           <td>Leads Generated</td>
-          <td id="leadsGeneratedCurrent"></td>
+          <td><input type="number" id="leadsGenerated" min="0" step="1" value="0"></td>
+          <td><input type="number" id="leadsGeneratedImprovement" min="0" step="0.01" value="0"></td>
           <td id="leadsGeneratedImproved"></td>
         </tr>
         <tr>
           <td>Conversion Rate</td>
-          <td id="conversionRateCurrent"></td>
+          <td><input type="number" id="conversionRate" min="0" step="0.01" value="0"></td>
+          <td><input type="number" id="conversionRateImprovement" min="0" step="0.01" value="0"></td>
           <td id="conversionRateImproved"></td>
         </tr>
         <tr>
           <td>New Customers</td>
           <td id="newCustomersCurrent"></td>
+          <td></td>
           <td id="newCustomersImproved"></td>
         </tr>
         <tr>
           <td>Retained Customers</td>
-          <td id="retainedCustomersCurrent"></td>
+          <td><input type="number" id="retainedCustomers" min="0" step="1" value="0"></td>
+          <td><input type="number" id="retainedCustomersImprovement" min="0" step="0.01" value="0"></td>
           <td id="retainedCustomersImproved"></td>
         </tr>
         <tr>
           <td>Total Customers</td>
           <td id="totalCustomersCurrent"></td>
+          <td></td>
           <td id="totalCustomersImproved"></td>
         </tr>
         <tr>
           <td>Revenue Per Customer</td>
-          <td id="revenuePerCustomerCurrent"></td>
+          <td><input type="number" id="revenuePerCustomer" min="0" step="0.01" value="0"></td>
+          <td><input type="number" id="revenuePerCustomerImprovement" min="0" step="0.01" value="0"></td>
           <td id="revenuePerCustomerImproved"></td>
         </tr>
         <tr>
           <td>Revenue</td>
           <td id="revenueCurrent"></td>
+          <td></td>
           <td id="revenueImproved"></td>
         </tr>
         <tr>
           <td>Gross Margin</td>
-          <td id="grossMarginCurrent"></td>
+          <td><input type="number" id="grossMargin" min="0" step="0.01" value="0"></td>
+          <td><input type="number" id="grossMarginImprovement" min="0" step="0.01" value="0"></td>
           <td id="grossMarginImproved"></td>
         </tr>
         <tr>
           <td>Gross Profit</td>
           <td id="grossProfitCurrent"></td>
+          <td></td>
           <td id="grossProfitImproved"></td>
         </tr>
         <tr>
           <td>Fixed Costs</td>
-          <td id="fixedCostsCurrent"></td>
+          <td><input type="number" id="fixedCosts" min="0" step="0.01" value="0"></td>
+          <td><input type="number" id="fixedCostsImprovement" min="0" step="0.01" value="0"></td>
           <td id="fixedCostsImproved"></td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
           <td>Net Profit</td>
           <td id="netProfitCurrent"></td>
+          <td></td>
           <td id="netProfitImproved"></td>
-        </tr>
-      </table>
-    </div>
+          </tr>
+            </table>
+            <button id="calculateButton">Calculate</button>
+          </div>
+    
     <div class="chart-container">
       <canvas id="impactChart"></canvas>
     </div>
