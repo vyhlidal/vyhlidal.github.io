@@ -55,8 +55,8 @@ document.getElementById('calculateButton').addEventListener('click', function() 
   // Update chart visualization (if applicable)
 });
 
-function updateTableResults(elementId,value) {
-  const element = document.getElementById(elementId);
+function updateTableResults(elementId, value) {
+  const element= document.getElementById(elementId);
   if (element) {
   element.textContent = value.toFixed(2);
   }
