@@ -1,9 +1,5 @@
 document.getElementById("calculateButton").addEventListener("click", function(event) {
     event.preventDefault();
-
-  // Hide the instructions card
-  document.getElementById("instructions-card").style.display = "none";
-
   // Get input values
   const leadsGenerated = parseFloat(document.getElementById('leadsGenerated').value);
   const conversionRate = parseFloat(document.getElementById('conversionRate').value) / 100;
