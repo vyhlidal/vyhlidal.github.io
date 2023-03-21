@@ -11,7 +11,7 @@ document.getElementById('calculateButton').addEventListener('click', function() 
   const conversionRateImprovement = 1 + parseFloat(document.getElementById('conversionRateImprovement').value) / 100;
   const retainedCustomersImprovement = 1 + parseFloat(document.getElementById('retainedCustomersImprovement').value) / 100;
   const revenuePerCustomerImprovement = 1 + parseFloat(document.getElementById('revenuePerCustomerImprovement').value) / 100;
-  const grossMarginImprovement = 1 - parseFloat(document.getElementById('grossMarginImprovement').value) / 100;
+  const grossMarginImprovement = 1 + parseFloat(document.getElementById('grossMarginImprovement').value) / 100;
   const fixedCostsImprovement = 1 - parseFloat(document.getElementById('fixedCostsImprovement').value) / 100;
 
   // Perform calculations
