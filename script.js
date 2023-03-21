@@ -73,18 +73,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   function updateTableResults(results) {
-    // Update the results in the results section (you can customize the output format as needed)
-    const resultSection = document.querySelector('.result-section');
-    resultSection.innerHTML = `
-      <h2>Results</h2>
-      <table>
-        <tr>
-          <th>Metrics</th>
-          <th>Current</th>
-          <th>Improved</th>
-        </tr>
-        <!-- Add more rows for each result -->
-      </table>
+    // Update the results in the results section
+    document.getElementById('leadsGeneratedCurrent').textContent = results[0].toFixed(2);
+    document.getElementById('conversionRateCurrent').textContent = (results[1] * 100).toFixed(2) + '%';
+    // Add more lines to update the other table data cells with the calculated results
+  
+    document.getElementById('leadsGeneratedImproved').textContent = results[12].toFixed(2);
+    document.getElementById('conversionRateImproved').textContent = (results[13] * 100).toFixed(2) + '%';
+    // Add more lines to update the other table data cells with the calculated results
+  }
+  
     `;
   }
   
