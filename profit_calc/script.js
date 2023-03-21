@@ -1,4 +1,5 @@
-document.getElementById('calculateButton').addEventListener('click', function() {
+document.getElementById("calculateButton").addEventListener("click", function(event) {
+    event.preventDefault();
   // Get input values
   const leadsGenerated = parseFloat(document.getElementById('leadsGenerated').value);
   const conversionRate = parseFloat(document.getElementById('conversionRate').value) / 100;
