@@ -98,10 +98,13 @@ function updateChartVisualization(currentNetProfit, improvedNetProfit) {
 
   // Update chart visualization (if applicable)
 });
+function formatNumberWithCommas(number) {
+  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 function updateTableResults(elementId, value) {
-  const element= document.getElementById(elementId);
+  const element = document.getElementById(elementId);
   if (element) {
-  element.textContent = value.toFixed(2);
+    element.textContent = formatNumberWithCommas(value.toFixed(2));
   }
-  }
+}
