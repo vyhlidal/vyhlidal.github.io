@@ -1,5 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 12px;
+  }
+
+  .button {
+    font-size: 12px;
+  }
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
