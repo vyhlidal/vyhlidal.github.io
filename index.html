@@ -27,13 +27,23 @@
   <main class="container my-4">
     <h1 class="text-center mb-4">Business Calculator</h1>
     <div class="input-section">
-      <table>
-        <tr>
-          <th>Metrics</th>
-          <th>Current</th>
-          <th>Improvement (in %)</th>
-          <th>Improved</th>
-        </tr>
+      <div class="table-responsive">
+        <table class="table">
+          <colgroup>
+            <col>
+            <col>
+            <col style="width: 7em;">
+            <col>
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Metrics</th>
+              <th>Current</th>
+              <th>Improvement (in %)</th>
+              <th>Improved</th>
+            </tr>
+          </thead>
+          <tbody>
         <tr>
           <td>Leads Generated</td>
           <td><input type="number" id="leadsGenerated" min="0" step="1" value="0"></td>
@@ -100,10 +110,12 @@
           <td></td>
           <td id="netProfitImproved"></td>
           </tr>
-            </table>
-            <button id="calculateButton">Calculate</button>
-            <canvas id="profitChart"></canvas>
-          </div>
+        </tbody>
+      </table>
+    </div>
+    <button id="calculateButton">Calculate</button>
+    <canvas id="profitChart"></canvas>
+  </div>
     
     <div class="chart-container">
       <canvas id="impactChart"></canvas>
