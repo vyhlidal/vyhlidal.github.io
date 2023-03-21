@@ -76,14 +76,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update the results in the results section
     document.getElementById('leadsGeneratedCurrent').textContent = results[0].toFixed(2);
     document.getElementById('conversionRateCurrent').textContent = (results[1] * 100).toFixed(2) + '%';
-    // Add more lines to update the other table data cells with the calculated results
+    document.getElementById('newCustomersCurrent').textContent = results[2].toFixed(2);
+    document.getElementById('retainedCustomersCurrent').textContent = results[3].toFixed(2);
+    document.getElementById('totalCustomersCurrent').textContent = results[4].toFixed(2);
+    document.getElementById('revenuePerCustomerCurrent').textContent = results[5].toFixed(2);
+    document.getElementById('revenueCurrent').textContent = results[6].toFixed(2);
+    document.getElementById('grossMarginCurrent').textContent = (results[7] * 100).toFixed(2) + '%';
+    document.getElementById('grossProfitCurrent').textContent = results[8].toFixed(2);
+    document.getElementById('fixedCostsCurrent').textContent = results[9].toFixed(2);
+    document.getElementById('netProfitCurrent').textContent = results[10].toFixed(2);
   
-    document.getElementById('leadsGeneratedImproved').textContent = results[12].toFixed(2);
-    document.getElementById('conversionRateImproved').textContent = (results[13] * 100).toFixed(2) + '%';
-    // Add more lines to update the other table data cells with the calculated results
-  }
-  
-    `;
+    document.getElementById('leadsGeneratedImproved').textContent = results[11].toFixed(2);
+    document.getElementById('conversionRateImproved').textContent = (results[12] * 100).toFixed(2) + '%';
+    document.getElementById('newCustomersImproved').textContent = results[13].toFixed(2);
+    document.getElementById('retainedCustomersImproved').textContent = results[14].toFixed(2);
+    document.getElementById('totalCustomersImproved').textContent = results[15].toFixed(2);
+    document.getElementById('revenuePerCustomerImproved').textContent = results[16].toFixed(2);
+    document.getElementById('revenueImproved').textContent = results[17].toFixed(2);
+    document.getElementById('grossMarginImproved').textContent = (results[18] * 100).toFixed(2) + '%';
+    document.getElementById('grossProfitImproved').textContent = results[19].toFixed(2);
+    document.getElementById('fixedCostsImproved').textContent = results[20].toFixed(2);
+    document.getElementById('netProfitImproved').textContent = results[21].toFixed(2);
   }
   
   function generateChart(data) {
