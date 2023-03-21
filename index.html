@@ -49,7 +49,33 @@
       <button id="calculateButton">Calculate</button>
     </div>
     <div class="result-section">
-      <!-- Display results here -->
+      <h2>Results</h2>
+      <table>
+        <tr>
+          <th>Metrics</th>
+          <th>Current</th>
+          <th>Improved</th>
+        </tr>
+        <tr>
+          <td>Leads Generated</td>
+          <td id="leadsGeneratedCurrent"></td>
+          <td id="leadsGeneratedImproved"></td>
+        </tr>
+        <tr>
+          <td>Conversion Rate</td>
+          <td id="conversionRateCurrent"></td>
+          <td id="conversionRateImproved"></td>
+        </tr>
+        <!-- Add more rows for each result -->
+      </table>
+    </div>
+    <div class="chart-container">
+      <canvas id="impactChart"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
     </div>
     <div class="chart-container">
       <canvas id="impactChart"></canvas>
